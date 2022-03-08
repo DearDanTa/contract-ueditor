@@ -34,6 +34,7 @@
         title="修改组件"
         :visible.sync="rightBarDrawerShow"
         size="350px"
+        append-to-body
         direction="rtl">
         <contractEditorRightBar ref="contractEditorRightBar" class="scrollbar-default"
                                 @updateDrawerData="updateDrawerData"
@@ -668,7 +669,9 @@
             };
             let parentNode = getParent(node);
             if (!parentNode) {
-              this.$refs.contractEditorRightBar.updateDrawerVisible(false);
+              this.$nextTick(() => {
+                this.$refs.contractEditorRightBar.updateDrawerVisible(false);
+              })
               return false;
             }
             let isAnchorLink = false;

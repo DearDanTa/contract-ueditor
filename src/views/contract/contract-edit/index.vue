@@ -13,7 +13,7 @@
         <el-button @click="viewContract" size="small" type="primary" :disabled="!contractSelectData">查看发布状态合同模板</el-button>
       </div>
       <div class="step-body">
-        <p class="step-text">步骤三：填写以下数据作为示例会自动填充到模板</p>
+        <p class="step-text">步骤三：填写以下数据作为示例会自动填充到模板（仅支持测试模板2）</p>
         <el-form :model="form" ref="ruleForm" label-width="120px" :rules="rules" :disabled="!contractSelectData" :inline="true">
           <el-form-item label="甲方姓名" prop="jfName">
             <el-input v-model="form.jfName" size="small" style="width: 200px" placeholder="请输入甲方姓名"></el-input>
@@ -39,7 +39,7 @@
         </el-form>
       </div>
       <div class="step-body">
-        <p class="step-text">步骤五：带着上面数据进入填写合同</p>
+        <p class="step-text">步骤五：带着上面数据进入填写合同（仅支持测试模板2）</p>
         <el-button @click="goEdit" size="small" type="primary" :disabled="!showEdit">
           使用该模板和数据进行填写合同
         </el-button>
