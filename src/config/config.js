@@ -1,5 +1,5 @@
 let CONFIG = {
-  UEditorPackAgeUrl: '/contract-ueditor-ui/UEditor/'
+  UEditorPackAgeUrl: `/UEditor/`
 };
 //编辑器公用配置
 window.UEditorMainConfig = {

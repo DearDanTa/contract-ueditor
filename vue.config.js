@@ -11,7 +11,8 @@ const BundleAnalyzerPlugin = argv.includes('--analyzer')
   : [];
 
 module.exports = {
-  publicPath: process.env.VUE_APP_BASE_URL,
+  // publicPath: process.env.VUE_APP_BASE_URL,
+  publicPath: './',
   productionSourceMap: false,
 
   // 开发服务器配置
